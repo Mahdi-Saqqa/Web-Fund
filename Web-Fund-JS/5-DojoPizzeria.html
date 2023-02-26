@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(39, 40, 34);
+            color: aliceblue;
+            font-size: 42pxpx;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        function PizzaOven(crustType,sauce,cheeses,toppings){
+            this.crustType = crustType;
+            this.sauce = sauce;
+            this.cheeses = cheeses;
+            this.toppings = toppings;
+            return this;
+        }
+        function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+        var crustTypes=["deep dish","hand tossed","tossed","dish","soft"];
+        var sauces = ["mariana","traditional","none"];
+        var chees = ["mozzarela","feta","normal","whatEver"];
+        var topping =["mashroom","olives","onion","pepperoni","sausage"];
+        
+        var pizzaone = new PizzaOven("deep dish","traditional",["mozzarella"],["pepperoni","sausage"]);
+        var pizzatwo = new PizzaOven("hand tossed","Mariana",["mozzarela","feta"],["mashroom","olives","onion"]);
+        var pizzarandom = new PizzaOven(crustTypes[getRandomInt(4)],sauces[getRandomInt(2)],chees[getRandomInt(4)],topping[getRandomInt(4)]);
+        function write(pizza){
+            document.write(
+                "<p>crustType  " ,pizza.crustType,"</p><p>sauce " ,pizza.sauce,"</p><p>cheeses ",pizza.cheeses,'</p>toppings ',pizza.toppings
+            );
+        }
+        write(pizzarandom);
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+        <h1>DojoWeather</h1>
+        <span>
+            <h3 onclick="alr(this)">Burbank</h3>
+            <h3 onclick="alr(this)">Chicago</h3>
+            <h3 onclick="alr(this)">Dallas</h3>
+
+
+        </span>
+    </div>
+    </header>
+    <main>
+        <span>
+            <h2>San Jose</h2>
+            <label>show tempratur in:  <select name="temptype" onchange="changetemp(this);">
+                <option value="c">C°</option>
+                <option value="f">F°</option>
+
+            </select></label>
+           
+        </span>
+        <section>
+            <div class="grid">
+                <h3>
+                    Today
+                </h3>
+                <i class="fa-solid fa-cloud-rain" ></i>
+                <p>some rain</p>
+                <span class="row">
+                <p><span class="temp">24</span>°</p>
+                <p class="blue"><span  class=" temp">18</span>°</p>
+                </span>
+            
+            </div>
+            <div class="grid">
+                <h3>
+                    Tomorrow
+                </h3>
+                <i class="fa-solid fa-sun" style="color: rgb(249, 218, 15);"></i>
+                <p>some sun</p>
+                <span class="row">
+                <p><span class="temp">27</span>°</p>
+                <p class="blue"><span  class=" temp">19</span>°</p>
+                </span>
+            
+            </div>
+            <div class="grid">
+                <h3>
+                    Friday
+                </h3>
+                <i class="fa-solid fa-cloud" ></i>
+                <p>some clouds</p>
+                <span class="row">
+                <p><span class="temp">21</span>°</p>
+                <p class="blue"><span  class=" temp">16</span>°</p>
+                </span>
+            
+            </div>
+            <div class="grid">
+                <h3>
+                    Saturday
+                </h3>
+                <i class="fa-solid fa-sun" style="color: rgb(249, 218, 15);"></i>
+                <p>some sun</p>
+                <span class="row">
+                <p><span class=" temp">26</span>°</p>
+                <p class="blue"><span  class=" temp">21</span>°</p>
+                </span>
+            
+            </div>
+        </section>
+    </main>
+    <footer>
+        <i class="fa-solid fa-cookie-bite" style="color: black;"></i>
+        <div>
+            <h3>Stop! Cookie Time</h3>
+            <p>We use cookies (sadly not the edible ones) to personalize
+                content and ads, to provide social media features and to
+                analyse our traffic. <a href="#">Read more...</a>
+               </p>
+
+        </div>
+        <button onclick="rem(this)">I Accept</button>
+        </footer>
+<script src="./script.js"></script>
+<script src="https://kit.fontawesome.com/3f03b7200d.js" crossorigin="anonymous"></script>
+</body>
+</html>

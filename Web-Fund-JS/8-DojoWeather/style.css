@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: rgb(159, 197, 248);
+}
+header>div{
+    margin: 0 auto;
+    height: 80px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+
+}
+header > div >span{
+    font-size: 24px;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+main{
+    width: 70%;
+    margin: 20px auto;
+}
+main>span{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    border-bottom: 3px solid;
+    margin-bottom: 30px;
+}
+.fa-solid{
+    color: rgb(109, 158, 210);
+    font-size: 90px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+.grid{
+    background-color: rgba(229, 231, 233, 0.434);
+    width: 20%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-size: 32px;
+    font-weight: 900;
+    color: red;
+}
+.blue{
+    color: blue;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border:3px solid black;
+}
+footer>*{
+    margin: 30px;
+}
+button{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(159, 197, 248);
+    
+}
