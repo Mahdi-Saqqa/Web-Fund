@@ -1,7 +1,7 @@
-function alr(elem){
+function alertupdate(elem){
     alert("Loading weather report for "+elem.innerText);
 }
-function rem(elem){
+function removecookies(elem){
     elem.parentElement.remove();
 }
 function changetemp(elem){
